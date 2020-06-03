@@ -6,9 +6,9 @@ $paginaData->title = "Miauwer";
 $paginaData->addCSS("css/style.css");
 $paginaData->addJavaScript("js/script.js");
 
-$dbInfo = "mysql:host=localhost;dbname=miauwerdb";
-$dbUser = "root";
-$dbPassword = "";
+$dbInfo = "mysql:host=miauwer.db;dbname=miauwerdb";
+$dbUser = "lmarien";
+$dbPassword = "&BYfLWvxhbAnQ";
 $db = new PDO( $dbInfo, $dbUser, $dbPassword );
 $db->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
 
