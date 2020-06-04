@@ -8,7 +8,7 @@ $paginaData->addJavaScript("js/script.js");
 
 $dbInfo = "mysql:host=miauwer.db;dbname=miauwerdb";
 $dbUser = "lmarien";
-$dbPassword = "&BYfLWvxhbAnQ";
+$dbPassword = "************";
 $db = new PDO( $dbInfo, $dbUser, $dbPassword );
 $db->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
 
