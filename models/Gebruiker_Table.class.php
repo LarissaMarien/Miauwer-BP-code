@@ -19,7 +19,7 @@ class Gebruiker_Table {
 				$statement = $this->db->prepare($sql);
         $statement->execute($data);
         if ( $statement->rowCount() === 1 ) {
-            $e = new Exception("Probleem: '$email' is reeds in gebruik!");
+            $e = header('Location: index.php?pagina=emailbestaat');
             throw $e;
         }
     }
@@ -33,7 +33,7 @@ class Gebruiker_Table {
             $model = $statement->fetchObject();
             $out = $model; //->gebruikersnaam;
         } else {
-            $loginProblem = new Exception( "Inloggen mislukt!" );
+            $loginProblem = header('Location: index.php?pagina=foutlogin');
             throw $loginProblem;
         }
         return $out;
