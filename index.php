@@ -35,3 +35,4 @@ if( $sessie->isLoggedIn() ) {
 
 $pagina = include_once "views/pagina.php";
 echo $pagina;
+?>
