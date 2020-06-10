@@ -320,7 +320,6 @@ input[type="date"]:before{
   font-family: 'Balsamiq Sans', cursive;
   color: white;
   text-transform: uppercase;
-  -webkit-appearance: none;
 }
 
 .inlogkader > input[type="button"] {
