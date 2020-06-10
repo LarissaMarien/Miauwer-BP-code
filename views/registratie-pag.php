@@ -219,3 +219,4 @@ return "<form class='new' method='post' action='' enctype='multipart/form-data'>
 				</form>
 
 				";
+?>
