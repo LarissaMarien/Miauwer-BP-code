@@ -6,9 +6,9 @@ $paginaData->title = "Miauwer";
 $paginaData->addCSS("css/style.css");
 $paginaData->addJavaScript("js/script.js");
 
-$dbInfo = "mysql:host=miauwer.db;dbname=miauwerdb";
-$dbUser = "lmarien";
-$dbPassword = "************";
+$dbInfo = "mysql:host=localhost;dbname=miauwerdb";
+$dbUser = "root";
+$dbPassword = "";
 $db = new PDO( $dbInfo, $dbUser, $dbPassword );
 $db->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
 
@@ -23,10 +23,6 @@ if( $sessie->isLoggedIn() ) {
 		} else {
 			$fileToLoad = "swipen";}
 		$paginaData->content .= include_once "controllers/$fileToLoad.php";
-		$paginaData->embeddedStyle = "
-			<style> nav a[href *= '?page=$fileToLoad']{
-				color: steelblue; }
-			</style>";
 } else {
 		$paginaData->content = include_once "controllers/swipen.php";
 		$navClicked = isset( $_GET['pagina'] );
