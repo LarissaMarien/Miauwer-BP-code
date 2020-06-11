@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Gegenereerd op: 29 mei 2020 om 10:14
+-- Gegenereerd op: 11 jun 2020 om 11:21
 -- Serverversie: 10.4.6-MariaDB
 -- PHP-versie: 7.3.9
 
@@ -55,7 +55,8 @@ CREATE TABLE `gebruiker` (
 --
 
 INSERT INTO `gebruiker` (`id`, `voornaam`, `naam`, `geboortedatum`, `beroep`, `gezinsleden`, `kinderen`, `allergisch`, `woning`, `tuin`, `omgeving`, `verblijf`, `kattengehad`, `aantalkatten`, `aantalhonden`, `aantalandere`, `profielfoto`, `email`, `paswoord`) VALUES
-(1, 'Larissa', 'Marien', '1995-08-02', 'Student', '3', '0', '1', 'Huis', 'Ja, een tuin', 'Stadsrand', 'vrij binnen', '1', 2, 0, 0, 'MarienLarissa.jpg', 'larissa.marien95@gmail.com', 'd4917cd4cedae16417cfddb3ce292e45');
+(1, 'Larissa', 'Marien', '1995-08-02', 'Student', '3', '0', '1', 'Huis', 'Ja, een tuin', 'Stadsrand', 'vrij binnen', '1', 2, 0, 0, 'MarienLarissa.jpg', 'larissa.marien95@gmail.com', 'd4917cd4cedae16417cfddb3ce292e45'),
+(2, 'Admin', 'Miauwer', '2020-05-01', 'Nvt', '1', '0', '2', 'Huis', 'Ja, een tuin', 'Stad', 'vrij binnen', '1', 6, 6, 6, 'MiauwerAdmin.jpg', 'admin@miauwer.com', '21232f297a57a5a743894a0e4a801fc3');
 
 -- --------------------------------------------------------
 
@@ -163,7 +164,7 @@ ALTER TABLE `katten`
 -- AUTO_INCREMENT voor een tabel `gebruiker`
 --
 ALTER TABLE `gebruiker`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT voor een tabel `gebruikerkat`
