@@ -27,7 +27,7 @@ $output = "
 
 if($gebruiker->gezinsleden==1){
   $output .=  $gebruiker->gezinsleden;
-  $output .=  'gezinslid';
+  $output .=  ' gezinslid';
 } else if ($gebruiker->gezinsleden==6) {
   $output .=  'Meer dan 5 gezinsleden';
 } else {
